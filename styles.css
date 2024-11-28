@@ -1,97 +1,66 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Fuente general */
-body {
-    font-family: 'Georgia', serif; /* Usar fuente similar si la original no está disponible */
-    color: #333;
-    background-color: #fdfdfd;
-    line-height: 1.6;
-}
-
-/* Encabezado */
-header {
-    background-color: #f5f5f5;
-    padding: 10px 20px;
-    border-bottom: 1px solid #ddd;
-}
-
-.top-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #7a2b2b;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    font-size: 1em;
-    color: #7a2b2b;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #4b1f1f;
-}
-
-/* Contenido principal */
-.content {
-    display: flex;
-    align-items: flex-start;
-    padding: 40px 20px;
+/* Slider Container */
+.slider-container {
+    margin: 40px auto;
+    width: 90%;
     max-width: 1000px;
-    margin: 0 auto;
-    gap: 20px;
-}
-
-.profile-image {
-    width: 300px;
-    height: auto;
+    overflow: hidden;
+    position: relative;
     border: 1px solid #ddd;
     border-radius: 5px;
+    background-color: #f5f5f5;
 }
 
-.info {
+/* Slider */
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 300%;
+}
+
+/* Slide */
+.slide {
     flex: 1;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    color: #333;
 }
 
-.info h1 {
-    font-size: 2.5em;
+.slide h2 {
+    font-size: 1.8em;
     color: #7a2b2b;
     margin-bottom: 10px;
 }
 
-.info p {
+.slide p {
     font-size: 1.2em;
-    color: #555;
+    margin: 10px 0;
 }
 
-/* Footer */
-footer {
+/* Navigation Buttons */
+.slider-container:before,
+.slider-container:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: #7a2b2b;
+    color: white;
     text-align: center;
-    padding: 20px;
-    background-color: #f5f5f5;
-    border-top: 1px solid #ddd;
-    margin-top: 40px;
+    line-height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
 }
 
-footer p {
-    font-size: 0.9em;
-    color: #999;
+.slider-container:before {
+    left: 10px;
+    content: "<";
 }
 
+.slider-container:after {
+    right: 10px;
+    content: ">";
+}
