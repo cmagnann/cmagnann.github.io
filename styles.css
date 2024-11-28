@@ -95,3 +95,47 @@ footer p {
     color: #999;
 }
 
+/* Sección General */
+section {
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+}
+
+.section-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2em;
+    color: #7a2b2b;
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #555;
+}
+
+section p, section ul li a {
+    font-size: 1.2em;
+    color: #555;
+}
+
+section ul li a {
+    text-decoration: none;
+    color: #7a2b2b;
+}
+
+section ul li a:hover {
+    text-decoration: underline;
+    color: #4b1f1f;
+}
