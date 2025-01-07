@@ -7,7 +7,7 @@
 
 /* Fuente general */
 body {
-    font-family: 'Georgia', serif; /* Usar fuente similar si la original no está disponible */
+    font-family: 'Georgia', serif;
     color: #333;
     background-color: #fdfdfd;
     line-height: 1.6;
@@ -97,7 +97,7 @@ nav ul li a:hover {
 }
 
 .proyecto-imagen img {
-    width: 300px;
+    width: var(--imagen-width, 250px);
     height: auto;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -111,6 +111,8 @@ nav ul li a:hover {
 
 .proyecto-descripcion {
     flex: 1;
+    max-width: 600px; /* Limitar ancho del texto */
+    line-height: 1.8; /* Mejorar la legibilidad */
 }
 
 .proyecto-descripcion h3 {
@@ -122,15 +124,25 @@ nav ul li a:hover {
 .proyecto-descripcion p {
     font-size: 1.2em;
     color: #555;
+    margin-bottom: 15px; /* Espaciado entre párrafos */
 }
 
-.proyecto-descripcion a {
+/* Títulos de secciones */
+section h2 {
+    font-size: 2em;
+    color: #7a2b2b;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo para enlaces destacados */
+.enlace-destacado {
     text-decoration: none;
     color: #7a2b2b;
+    transition: color 0.3s ease;
 }
 
-.proyecto-descripcion a:hover {
-    text-decoration: underline;
+.enlace-destacado:hover {
     color: #4b1f1f;
+    text-decoration: none;
 }
-
