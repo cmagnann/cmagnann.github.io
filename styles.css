@@ -193,4 +193,56 @@ section h2 {
 #contacto .info i {
     display: inline-block;
 }
+/* --- Estilos Responsivos --- */
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .profile-image {
+        width: 200px;
+    }
+
+    .info h1 {
+        font-size: 2em;
+    }
+
+    .info p {
+        font-size: 1.2em;
+    }
+
+    .proyecto {
+        flex-direction: column;
+    }
+
+    .proyecto-imagen img {
+        width: 150px;
+    }
+
+    .proyecto-descripcion h3 {
+        font-size: 1.5em;
+    }
+
+    .proyecto-descripcion p {
+        font-size: 1.2em;
+    }
+
+    #contacto .info a {
+        font-size: 30px;
+    }
+}
 
