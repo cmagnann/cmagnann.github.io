@@ -245,4 +245,30 @@ section h2 {
         font-size: 30px;
     }
 }
+/* Estilos para los iconos de descarga */
+.download-icons {
+  display: flex;
+  gap: 20px;              /* Ajusta el espacio entre iconos */
+  margin-top: 15px;       /* Separación respecto al párrafo */
+}
+
+.download-icons .icon-link {
+  color: #fff;            /* Texto e icono en blanco */
+  text-decoration: none;  /* Sin línea debajo */
+  display: flex;
+  flex-direction: column; /* Texto debajo del icono */
+  align-items: center;    /* Centrado horizontal */
+  font-size: 1em;         /* Mantiene el tamaño actual */
+}
+
+.download-icons .icon-link i {
+  /* El tamaño del icono ya viene con fa-2x, pero si quieres ajustarlo: */
+  /* font-size: 2em; */
+}
+
+.download-icons .icon-link span {
+  margin-top: 6px;        /* Separación icono-texto */
+  font-size: 1em;         /* Mismo tamaño que el texto normal */
+  line-height: 1;         /* Eliminamos exceso de altura */
+}
 
