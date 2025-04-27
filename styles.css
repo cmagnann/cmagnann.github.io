@@ -246,29 +246,26 @@ section h2 {
     }
 }
 /* Estilos para los iconos de descarga */
+/* Centrar el grupo de descargas */
 .download-icons {
   display: flex;
-  gap: 20px;              /* Ajusta el espacio entre iconos */
-  margin-top: 15px;       /* Separación respecto al párrafo */
+  justify-content: center;  /* <-- Centra los iconos en el contenedor */
+  gap: 20px;
+  margin-top: 15px;
 }
 
+/* Asegurarse de que icono y texto sean blancos y sin subrayado */
 .download-icons .icon-link {
-  color: #fff;            /* Texto e icono en blanco */
-  text-decoration: none;  /* Sin línea debajo */
+  color: #fff;              /* texto e icono en blanco */
+  text-decoration: none;    /* quita la línea */
   display: flex;
-  flex-direction: column; /* Texto debajo del icono */
-  align-items: center;    /* Centrado horizontal */
-  font-size: 1em;         /* Mantiene el tamaño actual */
-}
-
-.download-icons .icon-link i {
-  /* El tamaño del icono ya viene con fa-2x, pero si quieres ajustarlo: */
-  /* font-size: 2em; */
+  flex-direction: column;
+  align-items: center;
 }
 
 .download-icons .icon-link span {
-  margin-top: 6px;        /* Separación icono-texto */
-  font-size: 1em;         /* Mismo tamaño que el texto normal */
-  line-height: 1;         /* Eliminamos exceso de altura */
+  margin-top: 6px;
+  font-size: 1em;
+  line-height: 1;
 }
 
